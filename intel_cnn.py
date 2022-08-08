@@ -18,8 +18,8 @@ import random
 from random import randint
 
 # Define paths
-train_path = '/content/drive/MyDrive/ML/Intel Image Classification/seg_train/seg_train/'
-test_path = '/content/drive/MyDrive/ML/Intel Image Classification/seg_test/seg_test/'
+train_path = ' < PATH TO TRAIN DATA > '
+test_path = ' < PATH TO TEST DATA > '
 
 # Define path specification list
 path_list = ['buildings', 'forest', 'glacier', 'mountain', 'sea', 'street']
