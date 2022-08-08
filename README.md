@@ -1,16 +1,16 @@
 # Intel Image Classification
 
 ## The Neural Network
-This convolutional neural network predicts whether an image is of a building, glacier, forest, sea, street, or mountain . The model will predict a list of 6 elements (indices 0 - 5), where each value in the list represents the probability that the image represents one of the classes. In other words, given an input image, the model will output a list [*probability image is of a building*, *probability image is of a forest*, *probability image is of a glacier*, *probability image is of a mountain*, *probability image is of a sea*, *probability image is of a street*]. The element with the highest probability is the model's prediction. Since the model is a multiclass classification algorithm that predicts categorical values, it uses a categorical crossentropy loss function, has 6 output neurons (one for each class), and uses a standard softmax activation function. It uses a standard SGD optimizer with a learning rate of 0.001 and has a dropout layer to prevent overfitting. The model has an architecture consisting of:
+This convolutional neural network predicts whether an image is of a building, glacier, forest, sea, street, or mountain . The model will predict a list of 6 elements (indices 0 - 5), where each value in the list represents the probability that the image represents one of the classes. In other words, given an input image, the model will output a list [*probability image is of a building*, *probability image is of a forest*, *probability image is of a glacier*, *probability image is of a mountain*, *probability image is of a sea*, *probability image is of a street*]. The element with the highest probability is the model's prediction. Since the model is a multiclass classification algorithm that predicts categorical values, it uses a categorical crossentropy loss function, has 6 output neurons (one for each class), and uses a standard softmax activation function. It uses a SGD optimizer with a learning rate of 0.001 and has a dropout layer to prevent overfitting. The model has an architecture consisting of:
 - 1 Horizontal random flip layer (for image preprocessing)
 - 1 VGG16 base model (with an input shape of (128, 128, 3))
 - 1 Flatten layer
 - 1 Dropout layer (with a dropout rate of 0.3)
 - 1 Hidden layer (with 256 neurons and a ReLU activation function
-- 1 Output layer (with 1 output neuron and a sigmoid activation function)
+- 1 Output layer (with 6 output neurons and a softmax activation function)
 
 Note that when running the **intel_cnn.py** file, you will need to input the paths of the training and testing sets as strings — the location for where to put the paths are signified in the file with the words "< PATH TO TRAINING DATA >" and "< PATH TO TESTING DATA >." Note that when you input these paths, they should be such that — when they are concatenated with the individual elements listed in the **path_list** variable — they are complete paths. For example:
-> The dataset is stored in a folder called *intel-dara*, under which are the respective *train* and *test* directories that can be downloaded from the source (the link to the download site is below)
+> The dataset is stored in a folder called *intel-data*, under which are the respective *train* and *test* directories that can be downloaded from the source (the link to the download site is below)
 > - Thus, your file structure is something like:
 
 >     ↓ folder1
