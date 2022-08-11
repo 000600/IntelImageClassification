@@ -48,7 +48,7 @@ Note that when running the **intel_cnn.py** file, you will need to input the pat
 Feel free to further tune the hyperparameters or build upon the model!
 
 ## The Dataset
-The dataset used here can be found at this link: https://www.kaggle.com/datasets/puneet6060/intel-image-classification. Credit for the dataset collection goes to **Vincent Liu**, **Uzair Khan**, **Puru Behl** and others on *Kaggle*. The dataset contains approximately 14064 training images and 3000 testing images (the prediction images are not used here). Note that the images from the original dataset are resized to 128 x 128 images so that they are more manageable for the model. They are considered RGB by the model since the VGG16 model only accepts images with three color channels. The dataset is not included in the repository because it is too large to stabley upload to Github, so just use the link above to find and download the dataset.
+The dataset used here can be found at this link: https://www.kaggle.com/datasets/puneet6060/intel-image-classification. Credit for the dataset collection goes to **Vincent Liu**, **Uzair Khan**, **Puru Behl** and others on *Kaggle*. The dataset contains approximately 14064 training images and 3000 testing images (the prediction images are not used here). Note that the images from the original dataset are resized to 128 x 128 x 3 images so that they are more manageable for the model. They are considered RGB by the model since the VGG16 model only accepts images with three color channels. The dataset is not included in the repository because it is too large to stabley upload to Github, so just use the link above to find and download the dataset.
 
 ## Libraries
 This neural network was created with the help of the Tensorflow library.
