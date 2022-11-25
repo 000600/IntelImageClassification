@@ -43,7 +43,7 @@ def create_dataset(path_stem, path_list):
     for r, d, f in os.walk(fr'{string}'):
       for fi in f:
           if '.jpg' in fi or '.png' in fi or '.jpeg' in fi:
-              paths.append(os.path.join(r, fi)) # Add tumor images to the paths list
+              paths.append(os.path.join(r, fi)) # Add  images to the paths list
 
     # Add images to dataset
     for path in paths:
