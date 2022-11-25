@@ -141,8 +141,8 @@ plt.legend()
 plt.show()
 
 # Visualize AUC and validation AUC
-auc = history_dict['auc_3']
-val_auc = history_dict['val_auc_3']
+auc = history_dict['auc']
+val_auc = history_dict['val_auc']
 
 plt.plot(auc, label = 'Training AUC')
 plt.plot(val_auc, label = 'Validation AUC')
