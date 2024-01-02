@@ -9,7 +9,7 @@ This convolutional neural network predicts whether an image is of a building, gl
 - 1 Hidden layer (with 256 neurons and a ReLU activation function
 - 1 Output layer (with 6 output neurons and a softmax activation function)
 
-Note that when running the **intel_cnn.py** file, you will need to input the paths of the training and testing sets as strings — the location for where to put the paths are signified in the file with the words "< PATH TO TRAINING DATA >" and "< PATH TO TESTING DATA >." Note that when you input these paths, they should be such that — when they are concatenated with the individual elements listed in the **path_list** variable — they are complete paths. For example:
+Note that when running the **intel_cnn.py** file, you will need to input the paths of the training and testing sets as strings — the location for where to put the paths are signified in the file with the words "< PATH TO TRAINING DATA >" and "< PATH TO TESTING DATA >." When you input these paths, they should be such that — when they are concatenated with the individual elements listed in the **path_list** variable — they are complete paths. For example:
 > The dataset is stored in a folder called *intel-data*, under which are the respective *train* and *test* directories that can be downloaded from the source (the link to the download site is below)
 > - Thus, your file structure is something like:
 
